@@ -1,9 +1,24 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ide
+.history
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
 # dependencies
 node_modules
 .pnp
 .pnp.js
+
+# NestJs
+dist
+
+# Tests
+/coverage
+/.nyc_output
 
 # testing
 coverage
@@ -18,16 +33,20 @@ build
 *.pem
 
 # debug
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
 # turbo
 .turbo
+
+# Ignore generated credentials from google-github-actions/auth
+gha-creds-*.json

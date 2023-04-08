@@ -1,0 +1,28 @@
+{
+  "name": "evm-arbitrage-bot",
+  "version": "0.0.0",
+  "author": "James Ward",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "test": "turbo run test --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"packages/**/*.{ts,tsx,md}\" && turbo run format"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "prettier": "2.8.7",
+    "turbo": "1.8.8"
+  },
+  "engines": {
+    "npm": "^7.0.0",
+    "node": "^16.0.0"
+  },
+  "dependencies": {},
+  "packageManager": "yarn@1.22.15"
+}
